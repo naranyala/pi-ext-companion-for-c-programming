@@ -1,0 +1,33 @@
+{
+  "name": "pi-ext-c-programming-companion",
+  "version": "1.0.0",
+  "description": "A professional C/C++ systems programming companion for the pi coding agent",
+  "keywords": ["pi", "extension", "c-programming", "systems-engineering", "debugging"],
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "type-check": "tsc --noEmit",
+    "lint": "tsc --noEmit src/**/*.ts",
+    "dev": "pi -e ./src/index.ts",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "^0.32.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "author": "pi-agent",
+  "license": "MIT"
+}
