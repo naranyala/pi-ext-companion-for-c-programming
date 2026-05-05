@@ -33,7 +33,7 @@ The extension features an intelligent environment awareness system:
 To install the C-Programming Companion, follow these steps:
 
 ```bash
-pi install git:github.com/naranyala/pi-ext-c-programming-companion
+pi install git:github.com/naranyala/pi-ext-companion-for-c-programming
 ```
 
 ## Configuration
